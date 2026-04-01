@@ -8,7 +8,7 @@ geomoria.path = minetest.get_modpath(minetest.get_current_modname())
 geomoria.world = minetest.get_worldpath()
 geomoria.plans = {}
 geomoria.plans_keys = {}
-geomoria.geomoria_depth = -1
+geomoria.geomoria_depth = -244
 
 geomoria.min_x = -31000
 geomoria.min_z = -31000
@@ -17,7 +17,6 @@ geomoria.max_z = 31000
 
 
 -- Dungeon overgeneration puts mossycobble in inappropriate places.
-minetest.set_mapgen_setting('mg_flags', "nodungeons", true)
 
 geomoria.generate_ores = minetest.setting_getbool('geomoria_generate_ores')
 if geomoria.generate_ores == nil then
